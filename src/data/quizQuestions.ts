@@ -103,21 +103,6 @@ export const quizQuestions: QuizQuestion[] = [
   },
   {
     id: 7,
-    topic: "Pipeline",
-    question: "Em um pipeline CI/CD, qual é a ordem correta das etapas mais comuns?",
-    options: [
-      { letter: "A", text: "Deploy → Build → Test → Commit" },
-      { letter: "B", text: "Commit → Build → Test → Deploy" },
-      { letter: "C", text: "Test → Commit → Build → Deploy" },
-      { letter: "D", text: "Build → Deploy → Test → Commit" },
-      { letter: "E", text: "Commit → Deploy → Build → Test" },
-      { letter: "F", text: "Build → Test → Commit → Deploy" }
-    ],
-    correctAnswer: "B",
-    explanation: "O fluxo padrão é: desenvolvedor faz commit, pipeline faz build do código, executa testes automatizados e, se tudo passar, faz deploy."
-  },
-  {
-    id: 8,
     topic: "Dados Mockados",
     question: "Quando é mais apropriado usar dados mockados em vez de dados reais?",
     options: [
@@ -132,7 +117,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "Mocks são usados em desenvolvimento/testes quando a API real não existe, está indisponível ou quando queremos testar cenários específicos de forma isolada."
   },
   {
-    id: 9,
+    id: 8,
     topic: "MCP",
     question: "Qual cenário representa melhor o uso do MCP (Model Context Protocol)?",
     options: [
@@ -147,7 +132,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "MCP permite que IAs se conectem a ferramentas externas (Notion, Linear, bancos de dados) para ler e modificar dados, expandindo suas capacidades além do conhecimento interno."
   },
   {
-    id: 10,
+    id: 9,
     topic: "npm run dev",
     question: "O que acontece internamente quando você executa 'npm run dev'?",
     options: [
@@ -162,7 +147,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "O comando 'npm run dev' executa o script chamado 'dev' no package.json. Geralmente este script inicia um servidor de desenvolvimento com hot reload."
   },
   {
-    id: 11,
+    id: 10,
     topic: "Localhost",
     question: "Se você acessa 'localhost:3000' e 'localhost:8080' no mesmo computador, o que é verdade?",
     options: [
@@ -177,7 +162,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "Cada porta representa um serviço diferente. Você pode ter múltiplos servidores rodando simultaneamente em portas diferentes no mesmo localhost."
   },
   {
-    id: 12,
+    id: 11,
     topic: "Arquivo .env",
     question: "Por que o arquivo .env geralmente está no .gitignore?",
     options: [
@@ -192,7 +177,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "O .env contém segredos como chaves de API e senhas. Versioná-lo exporia essas credenciais a qualquer pessoa com acesso ao repositório."
   },
   {
-    id: 13,
+    id: 12,
     topic: "Lint",
     question: "Qual problema o ESLint NÃO consegue detectar?",
     options: [
@@ -207,7 +192,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "Linters analisam sintaxe e padrões de código, não semântica ou lógica de negócio. Se seu cálculo está errado mas sintaticamente correto, o ESLint não detecta."
   },
   {
-    id: 14,
+    id: 13,
     topic: "RLS (Row Level Security)",
     question: "Em um sistema com RLS ativo, o que acontece quando um usuário tenta acessar dados de outro usuário?",
     options: [
@@ -222,7 +207,7 @@ export const quizQuestions: QuizQuestion[] = [
     explanation: "RLS filtra silenciosamente os resultados no nível do banco. O usuário simplesmente não vê as linhas não autorizadas, como se não existissem."
   },
   {
-    id: 15,
+    id: 14,
     topic: "Edge Functions",
     question: "Por que uma Edge Function pode ter menor latência que uma função serverless tradicional?",
     options: [
