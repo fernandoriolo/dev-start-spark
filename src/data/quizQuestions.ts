@@ -14,226 +14,226 @@ export const quizQuestions: QuizQuestion[] = [
   {
     id: 1,
     topic: "Front-end e Back-end",
-    question: "Qual é a principal diferença entre Front-end e Back-end no desenvolvimento web?",
+    question: "Em uma aplicação web que exibe dados de usuários vindos de um banco de dados, qual parte é responsável por buscar esses dados?",
     options: [
-      { letter: "A", text: "Front-end cuida do banco de dados, Back-end cuida do visual" },
-      { letter: "B", text: "Front-end é o que o usuário vê e interage, Back-end é a lógica e dados no servidor" },
-      { letter: "C", text: "Front-end só funciona em celulares, Back-end só em computadores" },
-      { letter: "D", text: "Front-end usa apenas HTML, Back-end usa apenas CSS" },
-      { letter: "E", text: "Não existe diferença, são a mesma coisa" },
-      { letter: "F", text: "Front-end é para sites antigos, Back-end é para sites modernos" }
+      { letter: "A", text: "O Front-end, pois é ele que exibe os dados na tela do usuário" },
+      { letter: "B", text: "O Back-end, pois ele processa requisições e acessa o banco de dados" },
+      { letter: "C", text: "O navegador do usuário, que se conecta diretamente ao banco" },
+      { letter: "D", text: "O CSS, que estiliza e organiza os dados para exibição" },
+      { letter: "E", text: "O Front-end e o Back-end juntos, em uma única camada" },
+      { letter: "F", text: "O HTML, que estrutura os dados vindos do servidor" }
     ],
     correctAnswer: "B",
-    explanation: "O Front-end é a parte visual que o usuário vê (HTML, CSS, JavaScript), enquanto o Back-end processa dados, regras de negócio e se comunica com bancos de dados no servidor."
+    explanation: "O Back-end é responsável por processar requisições, aplicar regras de negócio e buscar dados no banco. O Front-end apenas recebe e exibe esses dados."
   },
   {
     id: 2,
     topic: "Biblioteca de Desenvolvimento",
-    question: "O que é uma biblioteca de desenvolvimento (library) em programação?",
+    question: "Qual a diferença principal entre uma biblioteca e um framework?",
     options: [
-      { letter: "A", text: "Um lugar físico onde desenvolvedores estudam" },
-      { letter: "B", text: "Um programa para escrever código mais rápido" },
-      { letter: "C", text: "Um conjunto de código pronto que pode ser reutilizado em projetos" },
-      { letter: "D", text: "Um site com tutoriais de programação" },
-      { letter: "E", text: "Uma linguagem de programação nova" },
-      { letter: "F", text: "Um tipo especial de banco de dados" }
+      { letter: "A", text: "Bibliotecas são apenas para Front-end, frameworks são para Back-end" },
+      { letter: "B", text: "Frameworks controlam o fluxo da aplicação, bibliotecas são chamadas quando você precisa" },
+      { letter: "C", text: "Bibliotecas são pagas, frameworks são gratuitos" },
+      { letter: "D", text: "Frameworks são conjuntos de bibliotecas, então são a mesma coisa" },
+      { letter: "E", text: "Bibliotecas exigem instalação, frameworks funcionam no navegador" },
+      { letter: "F", text: "Frameworks são mais leves e simples que bibliotecas" }
     ],
-    correctAnswer: "C",
-    explanation: "Uma biblioteca é um conjunto de funções e códigos prontos que desenvolvedores podem usar em seus projetos, evitando 'reinventar a roda'. Exemplos: React, Lodash, Axios."
+    correctAnswer: "B",
+    explanation: "A diferença chave é a 'inversão de controle': em um framework, ele controla o fluxo e chama seu código. Em uma biblioteca, você controla o fluxo e chama a biblioteca quando precisa."
   },
   {
     id: 3,
     topic: "Magic Link",
-    question: "O que é um Magic Link no contexto de autenticação de usuários?",
+    question: "Por que o Magic Link é considerado mais seguro que senha tradicional em alguns casos?",
     options: [
-      { letter: "A", text: "Um link que faz download automático de arquivos" },
-      { letter: "B", text: "Um link enviado por email que permite login sem digitar senha" },
-      { letter: "C", text: "Um atalho para a página inicial do site" },
-      { letter: "D", text: "Um link que funciona apenas em dispositivos Apple" },
-      { letter: "E", text: "Um tipo de URL que nunca expira" },
-      { letter: "F", text: "Um link para recuperar arquivos deletados" }
+      { letter: "A", text: "Porque usa criptografia de 256 bits, enquanto senhas usam 128 bits" },
+      { letter: "B", text: "Porque o link expira rapidamente e não pode ser reutilizado, eliminando senhas fracas" },
+      { letter: "C", text: "Porque os links são armazenados no navegador de forma permanente" },
+      { letter: "D", text: "Porque funciona apenas em redes Wi-Fi seguras" },
+      { letter: "E", text: "Porque o usuário precisa confirmar por SMS além do email" },
+      { letter: "F", text: "Porque substitui a autenticação de dois fatores completamente" }
     ],
     correctAnswer: "B",
-    explanation: "Magic Link é um método de autenticação onde o usuário recebe um link único por email. Ao clicar, ele é automaticamente logado, sem precisar lembrar senhas."
+    explanation: "Magic Links expiram em minutos e são de uso único, eliminando problemas como senhas fracas, reutilizadas ou vazadas. A segurança depende do acesso ao email."
   },
   {
     id: 4,
     topic: "Next.js",
-    question: "O que é Next.js?",
+    question: "Qual vantagem do Next.js sobre o React puro para SEO de um site?",
     options: [
-      { letter: "A", text: "Um banco de dados para armazenar informações" },
-      { letter: "B", text: "Uma linguagem de programação criada pelo Google" },
-      { letter: "C", text: "Um framework React para criar aplicações web com recursos avançados" },
-      { letter: "D", text: "Um aplicativo para editar imagens" },
-      { letter: "E", text: "Um sistema operacional para servidores" },
-      { letter: "F", text: "Uma extensão do navegador Chrome" }
+      { letter: "A", text: "Next.js usa uma linguagem diferente que os buscadores entendem melhor" },
+      { letter: "B", text: "Next.js permite renderização no servidor, entregando HTML pronto para indexação" },
+      { letter: "C", text: "Next.js compila o código para uma versão mais leve que carrega mais rápido" },
+      { letter: "D", text: "Next.js gera automaticamente meta tags sem necessidade de configuração" },
+      { letter: "E", text: "Next.js bloqueia bots de busca para proteger o conteúdo" },
+      { letter: "F", text: "React puro também tem SSR nativo, então não há diferença para SEO" }
     ],
-    correctAnswer: "C",
-    explanation: "Next.js é um framework baseado em React que facilita a criação de sites e aplicações web, oferecendo recursos como renderização no servidor, rotas automáticas e otimização de performance."
+    correctAnswer: "B",
+    explanation: "Next.js oferece SSR (Server-Side Rendering) e SSG (Static Site Generation), enviando HTML renderizado para os buscadores, enquanto React puro envia JavaScript que precisa ser executado."
   },
   {
     id: 5,
     topic: "UX e UI",
-    question: "Qual a diferença entre UX (User Experience) e UI (User Interface)?",
+    question: "Um usuário reclama que 'encontrar o botão de compra foi muito difícil'. Isso é um problema de:",
     options: [
-      { letter: "A", text: "UX é a experiência completa do usuário, UI é o design visual da interface" },
-      { letter: "B", text: "UX é para aplicativos móveis, UI é para sites" },
-      { letter: "C", text: "UX cuida das cores, UI cuida dos textos" },
-      { letter: "D", text: "São exatamente a mesma coisa, só nomes diferentes" },
-      { letter: "E", text: "UX é feito por programadores, UI por gerentes" },
-      { letter: "F", text: "UX é o código por trás, UI é o banco de dados" }
+      { letter: "A", text: "UI, pois o botão deveria ter uma cor mais chamativa" },
+      { letter: "B", text: "UX, pois a jornada do usuário até a compra não foi bem planejada" },
+      { letter: "C", text: "Front-end, pois o código do botão está incorreto" },
+      { letter: "D", text: "UI, pois todos os problemas visuais são de interface" },
+      { letter: "E", text: "Back-end, pois o botão não está carregando corretamente" },
+      { letter: "F", text: "Acessibilidade, pois o botão não está visível para todos" }
     ],
-    correctAnswer: "A",
-    explanation: "UX (User Experience) foca em como o usuário se sente ao usar o produto, enquanto UI (User Interface) cuida dos elementos visuais como botões, cores, ícones e layout."
+    correctAnswer: "B",
+    explanation: "A dificuldade em encontrar algo é um problema de experiência (UX) - a jornada e arquitetura da informação. Se o botão fosse feio mas fácil de achar, seria UI."
   },
   {
     id: 6,
     topic: "SaaS",
-    question: "O que significa SaaS (Software as a Service)?",
+    question: "Uma empresa oferece seu software por R$50/mês com acesso via navegador. Se o cliente cancelar, perde o acesso. Isso caracteriza:",
     options: [
-      { letter: "A", text: "Software que só funciona offline" },
-      { letter: "B", text: "Software disponibilizado pela internet, geralmente por assinatura" },
-      { letter: "C", text: "Um tipo de vírus de computador" },
-      { letter: "D", text: "Software que você precisa instalar via CD" },
-      { letter: "E", text: "Uma linguagem de programação" },
-      { letter: "F", text: "Software apenas para grandes empresas" }
+      { letter: "A", text: "Software on-premise, pois é acessado pela empresa" },
+      { letter: "B", text: "SaaS, pois é software como serviço com modelo de assinatura" },
+      { letter: "C", text: "PaaS, pois oferece uma plataforma para desenvolvimento" },
+      { letter: "D", text: "Open Source, pois qualquer um pode acessar via navegador" },
+      { letter: "E", text: "IaaS, pois infraestrutura é fornecida como serviço" },
+      { letter: "F", text: "Licença perpétua, pois o pagamento é recorrente" }
     ],
     correctAnswer: "B",
-    explanation: "SaaS é um modelo onde o software é acessado pela internet (na nuvem) e você paga pelo uso, geralmente mensalmente. Exemplos: Netflix, Spotify, Google Docs, Slack."
+    explanation: "SaaS (Software as a Service) é caracterizado por acesso via internet, modelo de assinatura, sem instalação local e perda de acesso ao cancelar."
   },
   {
     id: 7,
     topic: "Pipeline",
-    question: "No desenvolvimento de software, o que é um Pipeline (ou CI/CD Pipeline)?",
+    question: "Em um pipeline CI/CD, qual é a ordem correta das etapas mais comuns?",
     options: [
-      { letter: "A", text: "Um cabo que conecta o computador à internet" },
-      { letter: "B", text: "Uma sequência automatizada de etapas para testar e publicar código" },
-      { letter: "C", text: "Um tipo de banco de dados muito rápido" },
-      { letter: "D", text: "Uma linguagem de programação para jogos" },
-      { letter: "E", text: "Um programa para criar apresentações" },
-      { letter: "F", text: "Uma pasta especial no computador" }
+      { letter: "A", text: "Deploy → Build → Test → Commit" },
+      { letter: "B", text: "Commit → Build → Test → Deploy" },
+      { letter: "C", text: "Test → Commit → Build → Deploy" },
+      { letter: "D", text: "Build → Deploy → Test → Commit" },
+      { letter: "E", text: "Commit → Deploy → Build → Test" },
+      { letter: "F", text: "Build → Test → Commit → Deploy" }
     ],
     correctAnswer: "B",
-    explanation: "Um Pipeline é uma série de etapas automatizadas (testes, build, deploy) que o código passa antes de ir para produção, garantindo qualidade e agilidade nas entregas."
+    explanation: "O fluxo padrão é: desenvolvedor faz commit, pipeline faz build do código, executa testes automatizados e, se tudo passar, faz deploy."
   },
   {
     id: 8,
     topic: "Dados Mockados",
-    question: "O que são dados mockados (mock data) no desenvolvimento?",
+    question: "Quando é mais apropriado usar dados mockados em vez de dados reais?",
     options: [
-      { letter: "A", text: "Dados reais de usuários em produção" },
-      { letter: "B", text: "Dados falsos/simulados usados para testar a aplicação" },
-      { letter: "C", text: "Dados que foram hackeados" },
-      { letter: "D", text: "Dados que vêm de outros países" },
-      { letter: "E", text: "Dados que só funcionam no navegador Chrome" },
-      { letter: "F", text: "Dados armazenados em pendrives" }
+      { letter: "A", text: "Em produção, para proteger dados sensíveis dos usuários" },
+      { letter: "B", text: "Durante desenvolvimento e testes, quando a API real não está disponível" },
+      { letter: "C", text: "Sempre, pois dados mockados são mais rápidos que dados reais" },
+      { letter: "D", text: "Em aplicações financeiras, para evitar transações acidentais" },
+      { letter: "E", text: "Quando o banco de dados está cheio e precisa de mais espaço" },
+      { letter: "F", text: "Para substituir permanentemente APIs pagas e economizar custos" }
     ],
     correctAnswer: "B",
-    explanation: "Dados mockados são informações fictícias criadas para simular dados reais durante o desenvolvimento e testes, sem precisar acessar um banco de dados real."
+    explanation: "Mocks são usados em desenvolvimento/testes quando a API real não existe, está indisponível ou quando queremos testar cenários específicos de forma isolada."
   },
   {
     id: 9,
     topic: "MCP",
-    question: "O que é MCP (Model Context Protocol) no contexto de IA e desenvolvimento?",
+    question: "Qual cenário representa melhor o uso do MCP (Model Context Protocol)?",
     options: [
-      { letter: "A", text: "Um tipo de processador de computador" },
-      { letter: "B", text: "Um protocolo que permite IAs se conectarem a ferramentas e dados externos" },
-      { letter: "C", text: "Uma linguagem de programação para robôs" },
-      { letter: "D", text: "Um formato de arquivo de imagem" },
-      { letter: "E", text: "Um sistema operacional para celulares" },
-      { letter: "F", text: "Um método de criptografia de senhas" }
+      { letter: "A", text: "Uma IA que gera imagens a partir de descrições de texto" },
+      { letter: "B", text: "Uma IA que acessa seu Notion para buscar informações e atualizar páginas" },
+      { letter: "C", text: "Um chatbot que responde perguntas apenas com seu conhecimento interno" },
+      { letter: "D", text: "Um modelo de linguagem sendo treinado com novos dados" },
+      { letter: "E", text: "Uma API REST tradicional comunicando dois sistemas" },
+      { letter: "F", text: "Um banco de dados vetorial armazenando embeddings" }
     ],
     correctAnswer: "B",
-    explanation: "MCP (Model Context Protocol) é um padrão que permite que modelos de IA se conectem a ferramentas, APIs e fontes de dados externas, ampliando suas capacidades."
+    explanation: "MCP permite que IAs se conectem a ferramentas externas (Notion, Linear, bancos de dados) para ler e modificar dados, expandindo suas capacidades além do conhecimento interno."
   },
   {
     id: 10,
     topic: "npm run dev",
-    question: "O que acontece quando você executa 'npm run dev' em um projeto?",
+    question: "O que acontece internamente quando você executa 'npm run dev'?",
     options: [
-      { letter: "A", text: "Deleta todos os arquivos do projeto" },
-      { letter: "B", text: "Publica o site na internet" },
-      { letter: "C", text: "Inicia o servidor de desenvolvimento local para testar a aplicação" },
-      { letter: "D", text: "Faz download de um novo projeto" },
-      { letter: "E", text: "Envia o código para o GitHub" },
-      { letter: "F", text: "Desinstala todas as dependências" }
+      { letter: "A", text: "O npm compila o código TypeScript para JavaScript e publica online" },
+      { letter: "B", text: "O npm executa o script 'dev' definido no package.json, geralmente iniciando um servidor local" },
+      { letter: "C", text: "O npm baixa todas as dependências novamente do registro" },
+      { letter: "D", text: "O npm cria uma versão de produção otimizada da aplicação" },
+      { letter: "E", text: "O npm verifica erros de sintaxe e formata o código automaticamente" },
+      { letter: "F", text: "O npm atualiza todas as dependências para as versões mais recentes" }
     ],
-    correctAnswer: "C",
-    explanation: "O comando 'npm run dev' inicia um servidor de desenvolvimento local, permitindo que você veja e teste suas alterações no navegador em tempo real."
+    correctAnswer: "B",
+    explanation: "O comando 'npm run dev' executa o script chamado 'dev' no package.json. Geralmente este script inicia um servidor de desenvolvimento com hot reload."
   },
   {
     id: 11,
     topic: "Localhost",
-    question: "O que é 'localhost' no desenvolvimento web?",
+    question: "Se você acessa 'localhost:3000' e 'localhost:8080' no mesmo computador, o que é verdade?",
     options: [
-      { letter: "A", text: "Um site famoso de hospedagem" },
-      { letter: "B", text: "O endereço que representa seu próprio computador como servidor" },
-      { letter: "C", text: "Uma rede social para programadores" },
-      { letter: "D", text: "O nome do criador da internet" },
-      { letter: "E", text: "Um tipo de vírus de computador" },
-      { letter: "F", text: "Uma empresa de cloud computing" }
+      { letter: "A", text: "São o mesmo servidor, apenas com URLs diferentes" },
+      { letter: "B", text: "São servidores diferentes rodando em portas diferentes na mesma máquina" },
+      { letter: "C", text: "O 3000 é para desenvolvimento e 8080 é para produção" },
+      { letter: "D", text: "Apenas uma porta pode estar ativa por vez no localhost" },
+      { letter: "E", text: "A porta 8080 é mais segura que a 3000 por ser maior" },
+      { letter: "F", text: "Localhost só funciona com a porta padrão 80" }
     ],
     correctAnswer: "B",
-    explanation: "Localhost é o endereço (127.0.0.1) que aponta para seu próprio computador, usado para testar aplicações localmente antes de publicá-las na internet."
+    explanation: "Cada porta representa um serviço diferente. Você pode ter múltiplos servidores rodando simultaneamente em portas diferentes no mesmo localhost."
   },
   {
     id: 12,
     topic: "Arquivo .env",
-    question: "Para que serve o arquivo .env em um projeto?",
+    question: "Por que o arquivo .env geralmente está no .gitignore?",
     options: [
-      { letter: "A", text: "Para definir as cores do site" },
-      { letter: "B", text: "Para guardar variáveis de ambiente como senhas e chaves de API de forma segura" },
-      { letter: "C", text: "Para escrever o código principal da aplicação" },
-      { letter: "D", text: "Para armazenar imagens do projeto" },
-      { letter: "E", text: "Para criar animações" },
-      { letter: "F", text: "Para definir quais navegadores são compatíveis" }
+      { letter: "A", text: "Porque arquivos .env são muito grandes para o Git" },
+      { letter: "B", text: "Para evitar que credenciais sensíveis sejam versionadas e expostas publicamente" },
+      { letter: "C", text: "Porque o .env só funciona localmente e não no servidor" },
+      { letter: "D", text: "Porque o Git não consegue ler arquivos sem extensão comum" },
+      { letter: "E", text: "Para que cada desenvolvedor use exatamente as mesmas variáveis" },
+      { letter: "F", text: "Porque variáveis de ambiente são geradas automaticamente pelo sistema" }
     ],
     correctAnswer: "B",
-    explanation: "O arquivo .env armazena variáveis de ambiente (como chaves de API e senhas) separadas do código, mantendo informações sensíveis seguras e fora do controle de versão."
+    explanation: "O .env contém segredos como chaves de API e senhas. Versioná-lo exporia essas credenciais a qualquer pessoa com acesso ao repositório."
   },
   {
     id: 13,
     topic: "Lint",
-    question: "O que faz uma ferramenta de Lint (como ESLint) no desenvolvimento?",
+    question: "Qual problema o ESLint NÃO consegue detectar?",
     options: [
-      { letter: "A", text: "Comprime imagens para o site ficar mais rápido" },
-      { letter: "B", text: "Analisa o código para encontrar erros e problemas de estilo" },
-      { letter: "C", text: "Traduz o site para outros idiomas" },
-      { letter: "D", text: "Cria backup do código automaticamente" },
-      { letter: "E", text: "Converte o código para PDF" },
-      { letter: "F", text: "Faz deploy automático do site" }
+      { letter: "A", text: "Variáveis declaradas mas nunca utilizadas" },
+      { letter: "B", text: "Lógica de negócio incorreta que produz resultados errados" },
+      { letter: "C", text: "Uso de '==' em vez de '===' para comparações" },
+      { letter: "D", text: "Imports de módulos que não existem" },
+      { letter: "E", text: "Código que não segue o padrão de formatação definido" },
+      { letter: "F", text: "Funções async sem await dentro delas" }
     ],
     correctAnswer: "B",
-    explanation: "Ferramentas de Lint analisam seu código em busca de erros, bugs potenciais e problemas de formatação, ajudando a manter o código limpo e padronizado."
+    explanation: "Linters analisam sintaxe e padrões de código, não semântica ou lógica de negócio. Se seu cálculo está errado mas sintaticamente correto, o ESLint não detecta."
   },
   {
     id: 14,
     topic: "RLS (Row Level Security)",
-    question: "O que é RLS (Row Level Security) em bancos de dados?",
+    question: "Em um sistema com RLS ativo, o que acontece quando um usuário tenta acessar dados de outro usuário?",
     options: [
-      { letter: "A", text: "Um tipo de backup de dados" },
-      { letter: "B", text: "Uma regra que controla quais linhas/registros cada usuário pode acessar" },
-      { letter: "C", text: "Uma forma de ordenar dados alfabeticamente" },
-      { letter: "D", text: "Um método para acelerar consultas" },
-      { letter: "E", text: "Uma linguagem de programação para bancos" },
-      { letter: "F", text: "Um formato de exportação de dados" }
+      { letter: "A", text: "O sistema retorna um erro 403 Forbidden" },
+      { letter: "B", text: "A query simplesmente não retorna as linhas que ele não tem permissão, como se não existissem" },
+      { letter: "C", text: "O banco de dados bloqueia a conta do usuário por tentativa de invasão" },
+      { letter: "D", text: "Os dados são retornados mas criptografados" },
+      { letter: "E", text: "O sistema redireciona para a página de login" },
+      { letter: "F", text: "Um log de auditoria é criado mas os dados são retornados" }
     ],
     correctAnswer: "B",
-    explanation: "RLS é uma funcionalidade de segurança que define políticas para controlar quais registros (linhas) cada usuário pode ver, editar ou deletar no banco de dados."
+    explanation: "RLS filtra silenciosamente os resultados no nível do banco. O usuário simplesmente não vê as linhas não autorizadas, como se não existissem."
   },
   {
     id: 15,
     topic: "Edge Functions",
-    question: "O que são Edge Functions no desenvolvimento web?",
+    question: "Por que uma Edge Function pode ter menor latência que uma função serverless tradicional?",
     options: [
-      { letter: "A", text: "Funções que só funcionam no navegador Edge da Microsoft" },
-      { letter: "B", text: "Código que roda em servidores próximos ao usuário, na 'borda' da rede" },
-      { letter: "C", text: "Funções para criar bordas em imagens" },
-      { letter: "D", text: "Um tipo de animação CSS" },
-      { letter: "E", text: "Funções que só funcionam offline" },
-      { letter: "F", text: "Um método antigo de programação" }
+      { letter: "A", text: "Porque Edge Functions usam linguagens de programação mais rápidas" },
+      { letter: "B", text: "Porque são executadas em servidores geograficamente próximos ao usuário" },
+      { letter: "C", text: "Porque Edge Functions não precisam de internet para funcionar" },
+      { letter: "D", text: "Porque rodam no navegador do usuário, não em servidores" },
+      { letter: "E", text: "Porque Edge Functions têm acesso direto ao hardware do servidor" },
+      { letter: "F", text: "Porque são pré-compiladas e nunca precisam de cold start" }
     ],
     correctAnswer: "B",
-    explanation: "Edge Functions são funções serverless executadas em servidores distribuídos globalmente, próximos aos usuários, oferecendo respostas mais rápidas e menor latência."
+    explanation: "Edge Functions rodam em CDNs distribuídas globalmente, executando o código no servidor mais próximo do usuário, reduzindo a distância física que os dados percorrem."
   }
 ];
